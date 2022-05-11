@@ -20,7 +20,7 @@ This is a Kubernetes ToC Annual Review for the [k8gb](https://k8gb.io) project f
 [k8gb](https://www.k8gb.io/) is an open source DNS based global load balancing solution for Kubernetes.
 
 k8gb focuses on traffic load balancing across geographically dispersed Kubernetes clusters using different load balancing strategies to achieve high availability.
-k8gb works on Layer 7 and manipulates the DNS records in the Edge DNS server depending on the given strategy and the Kubernetes workloads health status.
+k8gb works on Layer 7. It registers as resolver in the Edge DNS server and provides DNS resolution for the services  based on the given strategy and the Kubernetes workloads health status.
 k8gb implements Kubernetes operator pattern with custom controller configurable either via standard Ingress resources or gslb custom resources.
 
 k8gb also relies on well-known CNCF projects in its work:
