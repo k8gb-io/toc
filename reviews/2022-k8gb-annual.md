@@ -17,13 +17,13 @@ This is a Kubernetes ToC Annual Review for the [k8gb](https://k8gb.io) project f
 
 ## Background
 
-[k8gb](https://www.k8gb.io/) is an open source DNS based global load balancing solution for Kubernetes.
+[k8gb](https://www.k8gb.io/) is an open source DNS-based global load balancing solution for Kubernetes.
 
 k8gb focuses on traffic load balancing across geographically dispersed Kubernetes clusters using different load balancing strategies to achieve high availability.
-k8gb works on Layer 7. It registers as resolver in the Edge DNS server and provides DNS resolution for the services based on the given strategy and the Kubernetes workloads health status.
-k8gb implements Kubernetes operator pattern with custom controller configurable either via standard Ingress resources or gslb custom resources.
+k8gb works on Layer 7. It registers as a resolver in the Edge DNS server(e.g. Infoblox, Route53, NS1) and provides DNS resolution for the services based on the given strategy and the Kubernetes workloads' health status.
+k8gb implements Kubernetes operator pattern with custom controller configurable either via standard Ingress resources or Gslb custom resources.
 
-k8gb also relies on well-known CNCF projects in its work:
+k8gb also relies on well-known projects from CNCF and Kubernetes ecosystems in its work:
 
 - [CoreDNS](https://coredns.io/)
 - [ExternalDNS](https://github.com/kubernetes-sigs/external-dns)
@@ -76,21 +76,21 @@ There are several other companies trying to adopt k8gb, but we don't have a publ
 
 <!-- What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation? -->
 
-Right now the project is focused on a wider adoption and better visibility in the community.
-We also plan to expand the ingration use cases to other managed cluster environments, such as Azure, GCP.
-Historically the project has proven to work on vanilla Kubernetes clusters and AWS/EKS and should work in other environents as well, but we need external help to make sure it works in these environments.
+Right now the project is focused on wider adoption and better visibility in the community.
+We also plan to expand the integration use cases to other managed cluster environments, such as Azure, GCP.
+Historically the project has proven to work on vanilla on-prem Kubernetes clusters and AWS/EKS and should work in other environments as well, but we need external help to make sure it works in these environments.
 
 ## CNCF Membership
 
 <!-- How can the CNCF help you achieve your upcoming goals? -->
 
 We hope that CNCF membership will help us to reach a wider audience and get more contributors involved in the project.
-One of the possibilities is CNCF sponsored events.
+One of the possibilities is CNCF-sponsored events.
 We also would like to explore the opportunities to expand the integration cases in cloud managed k8s environments, such as AWS, Azure, GCP, DigitalOcean, etc.
 
 ## Incubation
 
-Currently we only have one publicly confirmed adoption case, so we do not meet all the adoption criteria for the [incubating](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage) stage yet.
+Currently, we only have one publicly confirmed adoption case, so we do not meet all the adoption criteria for the [incubating](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage) stage yet.
 The goal is to continue gathering the community around the project and get publicly available adopters.
 
 ## Project Links
